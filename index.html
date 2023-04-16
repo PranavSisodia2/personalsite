@@ -6,22 +6,27 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Website</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Anuphan&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/8df93faec2.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <div id = "header">
         <div class="container">
             <nav>
-                <img src="./assets/image.jpeg" alt="" class="logo">
-                <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Services</a></li>
-                    <li><a href="#">Portfolio</a></li>
-                    <li><a href="#">Contact</a></li>
+                <h1>PS</h1>
+                <ul id = "sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
                 </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
             </nav>
-            <div class="header-text">
+            <div class="header-text fade-in from-left">
                 <p>SWE</p>
                 <h1>Hi, <br> I'm <span>Pranav</span>!</h1>
             </div>
@@ -30,7 +35,7 @@
 
 
 <!-- -----about----- -->
-    <div id="about">
+    <div id="about" class="fade-in">
         <div class="container">
             <div class="row">
                 <div class="about-col-1">
@@ -77,6 +82,23 @@
             </div>
         </div>
     </div>
+<div id="experience">
+    <div class="container">
+        <h1 class="sub-title">My Experience</h1>
+        <div class="experience-list">
+            <div>
+                <h2>Studica</h2>
+                <p>description</p>
+            </div>
+            <div>
+                <h2>Grantbook</h2>
+                <p>description</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+
 <!-- -----services------ -->
 <div id="services">
     <div class="container">
@@ -137,10 +159,36 @@
                 
             </div>
         </div>
+        <a href="#" class="btn">See more</a>
     </div>
 </div>
-
-
+<!-- -------------contact------------ -->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fa-sharp fa-solid fa-paper-plane"></i>contact@email.com</p>
+                <p><i class="fa-solid fa-phone"></i>000-000-0000</p>
+                <div class="social-icons">
+                    <a href="https://www.linkedin.com/feed/"><i class="fa-brands fa-linkedin"></i></a>
+                </div>
+                <a href="assets/image.jpeg" download  class="btn btn2">Download CV</a>
+            </div>
+            <div class="contact-right">
+                <form action="">
+                    <input type="text" name="Name" placeholder="Your Name" required id="">
+                    <input type="email" name="Email" placeholder="youremail@somewhere.com" required id="">
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>Copyright </p>
+    </div>
+</div>
 
 
 <script>
@@ -157,6 +205,45 @@
         event.currentTarget.classList.add("active-links");
         document.getElementById(tabname).classList.add("active-tab");
    }
+</script>
+
+<script>
+    var sidemenu = document.getElementById("sidemenu");
+
+    function openmenu(){
+        sidemenu.style.right = "0";
+    }
+    function closemenu(){
+        sidemenu.style.right = "-200px";
+    }
+</script>
+
+<script>
+    const faders = document.querySelectorAll('.fade-in');
+    const sliders = document.querySelectorAll('.slide-in');
+
+    const appearOptions = {
+        threshold: 0,
+        rootMargin: "0px 0px -20px 0px"
+    };
+    const appearOnScroll = new IntersectionObserver(function(entries, appearOnScroll ) {
+        entries.forEach(entry => {
+            if (!entry.isIntersecting){
+                return;
+            } else {
+                entry.target.classList.add("appear");
+                appearOnScroll.unobserve(entry.target);
+            }
+        })
+    }, appearOptions);
+
+    faders.forEach(fader => {
+        appearOnScroll.observe(fader);
+    })
+
+    sliders.forEach(slider => {
+        appearOnScroll.observe(slider);
+    })
 </script>
 
 </body>
