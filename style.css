@@ -29,6 +29,9 @@ nav{
     align-items: center;
     justify-content: space-between;
     flex-wrap: wrap;
+    padding-top: 1%;
+    width: 100%;
+    background: #262626;
 }
 .logo{
     width: 140px;
@@ -93,6 +96,11 @@ nav ul li a:hover::after{
 }
 .about-col-2{
     flex-basis: 60%;
+    display: block;
+    margin: auto;
+}
+.proj-about-col-2{
+    padding: 0 20%;
 }
 .sub-title{
     font-size: 60px;
@@ -166,6 +174,9 @@ nav ul li a:hover::after{
     font-weight: 500;
     margin-bottom: 15px;
 }
+.descrip{
+    color: white;
+}
 .services-list div a{
     text-decoration: none;
     color: white;
@@ -174,9 +185,11 @@ nav ul li a:hover::after{
     display: inline-block;
 }
 .services-list div:hover{
-    background: #ff004f;
+    /* background: #ff004f; */
+    color:#7036E9;
     transform: translateY(-10px);
 }
+
 /* ----------portfolio--------- */
 #portfolio{
     padding: 50px 0;
@@ -187,6 +200,7 @@ nav ul li a:hover::after{
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     grid-gap: 40px;
     margin-top: 50px;
+    padding: 0 20%;
 }
 .work{
     border-radius: 10px;
@@ -398,6 +412,68 @@ form .btn2{
     background: #ff004f;
     transform: translateY(-10px);
 }
+
+.folder{
+    width: 420px;
+    height: 310px;
+    margin: 10em auto 10em;
+
+    border-radius: 5px 25px 25px 25px;
+    /* filter: drop-shadow(0 0 0.75rem grey); */
+
+    background: #262626;
+    position: relative;
+    margin-bottom: 5%;
+    margin-top: 0;
+
+}
+
+.folder::before{
+    content:  '';
+    position: absolute;
+    top: -18px;
+    width: 200px;
+    height: 25px;
+    background: #262626;
+    border-radius: 25px 0 0 0;
+    clip-path: path('M 0 0 L 160 0 C 185 2, 175 16, 200 18 L 0 50 z');
+}
+.folder::after{
+    content: '';
+    position: absolute;
+    left:  70px;
+    width: 85px;
+    height: 5px;
+    top: -18px;
+    background: #7036E9;
+    border-radius: 0 0 5px 5px;
+}
+.fa-brands.fa-github{
+    position: absolute;
+    top:10px;
+    right: 0px;
+    font-size: 25px;
+    color: rgb(152, 152, 152);
+}
+.fa-brands.fa-github:hover{
+
+    color: #7036e9;
+}
+.skills{
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    font-size: 15px;
+    color: rgb(152, 152, 152);
+}
+.video{
+    height: 500px;
+    width: 800px;
+    display: block;
+    margin: auto;
+    padding: 2% 0;
+}
+
 /* --------------css for small screen-------- */
 nav .fa-solid{
     display: none;
@@ -464,4 +540,5 @@ nav .fa-solid{
         font-size: 14px;
     }
 }
+
 
