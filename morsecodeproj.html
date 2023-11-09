@@ -12,21 +12,20 @@
     <script src="https://kit.fontawesome.com/8df93faec2.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    <div id = "header">
-        <div class="container">
-            <nav>
-                <h1>PS</h1>
-                <ul id = "sidemenu">
-                    <li><a href="./index.html">Home</a></li>
-                    <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
-                </ul>
-                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
-            </nav>
-            <div class="header-text fade-in from-left">
-                <h1>Morse Code Puzzle</h1>
-            </div>
+    <div>
+        <nav>
+            <h1>PS</h1>
+            <ul id = "sidemenu">
+                <li><a href="./index.html">Home</a></li>
+                <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+            </ul>
+            <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text fade-in from-left">
+            <h1>Morse Code Puzzle</h1>
         </div>
     </div>
+
 
 
 <!-- -----about----- -->
@@ -36,17 +35,65 @@
                 <!-- <div class="about-col-1">
                     <img src="./assets/image.jpeg" alt="">
                 </div> -->
-                <video src="./assets/198 PROJECT VIDEO 1.mp4" class="video" controls autoplay muted></video>
                 <div class="proj-about-col-2">
-                    <h1 class="sub-title">About</h1>
-                    <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. In rutrum aliquam nisl ac ornare. Phasellus mi ex, lobortis nec tempus et, 
-                        elementum quis risus. Quisque eros purus, facilisis et efficitur id, suscipit sed ipsum. Phasellus scelerisque orci ex, lobortis 
-                        sollicitudin metus congue eget. Donec pretium maximus nibh, congue consequat velit convallis ac. Nam eros lectus, molestie eu vulputate 
-                        et, laoreet id orci. Duis bibendum risus diam. Phasellus sit amet feugiat nibh. Maecenas congue eget sem ac auctor. 
-                        Donec sed diam sed nisi euismod tempor. Quisque vel sapien vitae diam pharetra gravida sed et purus. Etiam id ultricies ex, 
-                        ut elementum ipsum. Mauris fermentum, ex vitae pulvinar bibendum, magna dui tempor nunc, consectetur placerat metus eros in ex.
+                    <h1 class="sub-title2">About</h1>
+                    <p>Tools: STM32 Microcontroller and C</p>
+                    <br>
+                    <p> The Morse Code Puzzle Project is an innovative and engaging academic endeavor that combines microcontroller programming, problem-solving, and Morse code decoding. This project aims to challenge participants' understanding of Morse code. It involves the use of an STM32 microcontroller to generate Morse code questions through flashing lights and allows users to respond through button presses. The algorithm records the duration of the button presses and translates the responses, providing immediate feedback to the user.
                     </p>
                 </div>
+                <div class="video">
+                    <!-- <h1 class="sub-title2">Demo:</h1> -->
+                    <video src="./assets/198 PROJECT VIDEO 1.mp4" class="video" controls autoplay muted></video>
+                    
+                </div>
+
+                <div class="proj-about-col-2">
+                    <br>
+                    <h1 class="sub-title2">Key Features</h1>
+                    <p> 1. STM32 Microcontroller: <br>
+                        The heart of the project is the STM32 microcontroller, which controls the entire system. It generates Morse code questions and manages user input.
+                        <br>
+                        <br>
+                        2. Morse Code Questions: <br>
+                        The microcontroller generates Morse code questions by flashing LED lights. Users need to decode these sequences to reveal the hidden message.
+                        <br>
+                        <br>
+                        3. User Response: <br>
+                        Users respond to the Morse code questions by pressing buttons, indicating their interpretation of the code.
+                        <br>
+                        <br>
+                        4. Response Evaluation: <br>
+                        The microcontroller records the duration of button presses and translates them into Morse code characters. It then checks if the user's response matches the correct answer.
+                        <br>
+                        <br>
+                        5. Feedback LEDs: <br>
+                        The system features LEDs for immediate feedback to the user. A solid green LED indicates a correct response, while a flashing green LED indicates an incorrect response.
+                    </p>
+                </div>
+
+                <!-- <div class="proj-about-col-2">
+                    <br>
+                    <h1 class="sub-title2">Educational Benefits</h1>
+                    <p> 
+                        1. Morse Code Proficiency: <br>
+                        Users will enhance their Morse code decoding skills through interactive challenges.
+                        <br>
+                        <br>
+                        2. Microcontroller Programming: <br>
+                        Participants will learn how to program an STM32 microcontroller to control hardware components and manage user input.
+                        <br>
+                        <br>
+                        3. Algorithm Development: <br>
+                        The project involves the development of algorithms for Morse code translation and response evaluation.
+                        <br>
+                        <br>
+                        4. Problem Solving: <br>
+                        Users will engage in problem-solving to decode Morse code messages.
+                    </p>
+                </div> -->
+                
+                
             </div>
         </div>
     </div>

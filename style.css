@@ -107,6 +107,12 @@ nav ul li a:hover::after{
     font-weight: 600;
     color: white;
 }
+.sub-title2{
+    font-size: 30px;
+    font-weight: 600;
+    color: white;
+    padding-bottom: 2%;
+}
 .tab-titles{
     display: flex;
     margin: 20px 0 40px;
@@ -467,11 +473,12 @@ form .btn2{
     color: rgb(152, 152, 152);
 }
 .video{
-    height: 500px;
-    width: 800px;
+    height: 450px;
+    width: 750px;
     display: block;
     margin: auto;
     padding: 2% 0;
+    padding-bottom: 5%;
 }
 
 /* --------------css for small screen-------- */

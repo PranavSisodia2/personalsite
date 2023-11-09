@@ -12,71 +12,95 @@
     <script src="https://kit.fontawesome.com/8df93faec2.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    <div id = "header">
-        <div class="container">
-            <nav>
-                <h1>PS</h1>
-                <ul id = "sidemenu">
-                    <li><a href="./index.html">Home</a></li>
-                    <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
-                </ul>
-                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
-            </nav>
-            <div class="header-text">
-                <h1>Self-Driving Model</h1>
-            </div>
+    <div>
+        <nav>
+            <h1>PS</h1>
+            <ul id = "sidemenu">
+                <li><a href="./index.html">Home</a></li>
+                <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+            </ul>
+            <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text fade-in from-left">
+            <h1>Self-Driving Vehicle</h1>
+            <h4>Phase 1: Virtual Model & Simulation</h4>
         </div>
     </div>
+
 
 
 <!-- -----about----- -->
     <div id="about">
         <div class="container">
             <div class="row">
-                <div class="about-col-1">
+                <!-- <div class="about-col-1">
                     <img src="./assets/image.jpeg" alt="">
+                </div> -->
+                <div class="proj-about-col-2">
+                    <h1 class="sub-title2">About</h1>
+                    <p>Tools: Python and CARLA</p>
+                    <br>
+                    <p> The Self-Driving Vehicle Model built using Python and tested in CARLA, represents an exciting venture into the world of autonomous driving. This project leverages cutting-edge technologies and algorithms to create a virtual self-driving car model that demonstrates advanced longitudinal and lateral control using the PID controller and Stanley controller, respectively. CARLA, an open-source simulator, provides the platform for testing and validating the system's capabilities as can be seen in the videos below.
+                    </p>
                 </div>
-                <div class="about-col-2">
-                    <h1 class="sub-title">About</h1>
-                    <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. In rutrum aliquam nisl ac ornare. Phasellus mi ex, lobortis nec tempus et, 
-                        elementum quis risus. Quisque eros purus, facilisis et efficitur id, suscipit sed ipsum. Phasellus scelerisque orci ex, lobortis 
-                        sollicitudin metus congue eget. Donec pretium maximus nibh, congue consequat velit convallis ac. Nam eros lectus, molestie eu vulputate 
-                        et, laoreet id orci. Duis bibendum risus diam. Phasellus sit amet feugiat nibh. Maecenas congue eget sem ac auctor. 
-                        Donec sed diam sed nisi euismod tempor. Quisque vel sapien vitae diam pharetra gravida sed et purus. Etiam id ultricies ex, 
-                        ut elementum ipsum. Mauris fermentum, ex vitae pulvinar bibendum, magna dui tempor nunc, consectetur placerat metus eros in ex.</p>
-
-                        <div class="tab-titles">
-                            <p class="tab-links active-links" onclick="opentab('skills')">Skills</p>
-                            <p class="tab-links" onclick="opentab('experience')">Experience</p>
-                            <p class="tab-links" onclick="opentab('education')">Education</p>
-                        </div>
-                        <div class="tab-contents active-tab" id="skills">
-                            <ul>
-                                <li><span>UI/UX</span><br>Designing Web Interfaces</li>
-                                <li><span>Web Dev</span><br>development of web</li>
-                                <li><span>AI/ML/span><br>Learnings of machine</li>
-                            </ul>
-                        </div>
-
-                        <div class="tab-contents" id="experience">
-                            <ul>
-                                <li><span>UI/UX</span><br>Designing Web Interfaces</li>
-                                <li><span>Web Dev</span><br>development of web</li>
-                                <li><span>AI/ML</span><br>Learnings of machine</li>
-                            </ul>
-                        </div>
-
-                        <div class="tab-contents" id="education">
-                            <ul>
-                                <li><span>UI/UX</span><br>Designing Web Interfaces</li>
-                                <li><span>Web Dev</span><br>development of web</li>
-                                <li><span>AI/ML/span><br>Learnings of machine</li>
-                            </ul>
-                        </div>
+                <div class="video">
+                    <!-- <h1 class="sub-title2">Demo:</h1> -->
+                    <video src="./assets/carla_testing.mp4" class="video" controls autoplay muted></video>
+                    
                 </div>
+
+                <div class="proj-about-col-2">
+                    <br>
+                    <h1 class="sub-title2">Key Features</h1>
+                    <p> 1. Python-based Self-Driving Model: <br>
+                        The core of the project is a self-driving car model implemented in Python. This model autonomously navigates and makes decisions based on sensor inputs and control algorithms.
+                        <br>
+                        <br>
+                        2. PID Longitudinal Control: <br>
+                        The project employs a Proportional-Integral-Derivative (PID) controller for longitudinal control, allowing the car to regulate its speed and maintain safe distances from other vehicles.
+                        <br>
+                        <br>
+                        3. Stanley Controller for Lateral Control: <br>
+                        The lateral control is handled by the Stanley controller, enabling precise lane-keeping and handling of curves.
+                        <br>
+                        <br>
+                        4. CARLA Simulation: <br>
+                        CARLA, a state-of-the-art open-source simulator, serves as the testing ground for the self-driving car model. It provides realistic virtual environments to validate and fine-tune the autonomous system.
+                    </p>
+                </div>
+
+                <!-- <div class="proj-about-col-2">
+                    <br>
+                    <h1 class="sub-title2">Educational Benefits</h1>
+                    <p> 
+                        1. Morse Code Proficiency: <br>
+                        Users will enhance their Morse code decoding skills through interactive challenges.
+                        <br>
+                        <br>
+                        2. Microcontroller Programming: <br>
+                        Participants will learn how to program an STM32 microcontroller to control hardware components and manage user input.
+                        <br>
+                        <br>
+                        3. Algorithm Development: <br>
+                        The project involves the development of algorithms for Morse code translation and response evaluation.
+                        <br>
+                        <br>
+                        4. Problem Solving: <br>
+                        Users will engage in problem-solving to decode Morse code messages.
+                    </p>
+                </div> -->
+                
+                
             </div>
         </div>
+        
     </div>
+
+    <div class="header-text fade-in from-left">
+        <h4>Phase 2: Integrating Model with Robotic Car</h4>
+    </div>
+
+</div>
 
 
 <script>
