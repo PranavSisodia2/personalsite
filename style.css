@@ -62,7 +62,10 @@ nav ul li a::after{
 nav ul li a:hover::after{
     width: 100%;
 }
-
+.subheader-text{
+    font-size: 30px;
+    padding-left: 5%;
+}
 .header-text{
     margin-top: 20%;
     padding-left: 5%;
